@@ -7,7 +7,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        5.4.2
-Release:        2.git.0.401a894%{?dist}
+Release:        2%{?dist}
 Summary:        Bifunctors
 
 License:        BSD
