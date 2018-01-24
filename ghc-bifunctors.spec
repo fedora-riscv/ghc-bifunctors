@@ -7,8 +7,8 @@
 %bcond_without tests
 
 Name:           ghc-%{pkg_name}
-Version:        5.4.2
-Release:        2%{?dist}
+Version:        5.5
+Release:        1%{?dist}
 Summary:        Bifunctors
 
 License:        BSD
@@ -24,6 +24,7 @@ BuildRequires:  ghc-containers-devel
 BuildRequires:  ghc-semigroups-devel
 BuildRequires:  ghc-tagged-devel
 BuildRequires:  ghc-template-haskell-devel
+BuildRequires:  ghc-th-abstraction-devel
 BuildRequires:  ghc-transformers-compat-devel
 BuildRequires:  ghc-transformers-devel
 %if %{with tests}
@@ -90,6 +91,9 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
+* Wed Jan 24 2018 Jens Petersen <petersen@redhat.com> - 5.5-1
+- update to 5.5
+
 * Sun Sep 17 2017 Elliott Sales de Andrade <quantum.analyst@gmail.com> 5.4.2-2
 - Expand description a bit.
 
