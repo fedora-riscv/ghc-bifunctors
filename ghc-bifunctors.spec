@@ -7,8 +7,8 @@
 %bcond_without tests
 
 Name:           ghc-%{pkg_name}
-Version:        5.5
-Release:        2%{?dist}
+Version:        5.5.3
+Release:        1%{?dist}
 Summary:        Bifunctors
 
 License:        BSD
@@ -25,11 +25,11 @@ BuildRequires:  ghc-semigroups-devel
 BuildRequires:  ghc-tagged-devel
 BuildRequires:  ghc-template-haskell-devel
 BuildRequires:  ghc-th-abstraction-devel
-BuildRequires:  ghc-transformers-compat-devel
 BuildRequires:  ghc-transformers-devel
 %if %{with tests}
 BuildRequires:  ghc-QuickCheck-devel
 BuildRequires:  ghc-hspec-devel
+BuildRequires:  ghc-transformers-compat-devel
 %endif
 # End cabal-rpm deps
 
@@ -85,6 +85,9 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
+* Mon Jul 09 2018 Elliott Sales de Andrade <quantum.analyst@gmail.com> - 5.5.3-1
+- update to 5.5.3
+
 * Wed Feb 07 2018 Fedora Release Engineering <releng@fedoraproject.org> - 5.5-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
 
