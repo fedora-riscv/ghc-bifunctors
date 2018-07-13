@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        5.5.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Bifunctors
 
 License:        BSD
@@ -85,6 +85,9 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
+* Fri Jul 13 2018 Fedora Release Engineering <releng@fedoraproject.org> - 5.5.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
+
 * Mon Jul 09 2018 Elliott Sales de Andrade <quantum.analyst@gmail.com> - 5.5.3-1
 - update to 5.5.3
 
