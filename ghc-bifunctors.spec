@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        5.5.4
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Bifunctors
 
 License:        BSD
@@ -116,6 +116,9 @@ cp -bp %{SOURCE1} %{pkg_name}.cabal
 
 
 %changelog
+* Tue Jan 28 2020 Fedora Release Engineering <releng@fedoraproject.org> - 5.5.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
+
 * Thu Jul 25 2019 Jens Petersen <petersen@redhat.com> - 5.5.4-1
 - update to 5.5.4
 
