@@ -7,15 +7,14 @@
 %bcond_without tests
 
 Name:           ghc-%{pkg_name}
-Version:        5.5.4
-Release:        2%{?dist}
+Version:        5.5.7
+Release:        1%{?dist}
 Summary:        Bifunctors
 
 License:        BSD
 Url:            https://hackage.haskell.org/package/%{pkg_name}
 # Begin cabal-rpm sources:
 Source0:        https://hackage.haskell.org/package/%{pkgver}/%{pkgver}.tar.gz
-Source1:        https://hackage.haskell.org/package/%{pkgver}/%{pkg_name}.cabal#/%{pkgver}.cabal
 # End cabal-rpm sources
 
 # Begin cabal-rpm deps:
@@ -77,7 +76,6 @@ This package provides the Haskell %{pkg_name} profiling library.
 %prep
 # Begin cabal-rpm setup:
 %setup -q -n %{pkgver}
-cp -bp %{SOURCE1} %{pkg_name}.cabal
 # End cabal-rpm setup
 
 
@@ -129,6 +127,9 @@ cp -bp %{SOURCE1} %{pkg_name}.cabal
 
 
 %changelog
+* Sun Feb 09 2020 Jens Petersen <petersen@redhat.com> - 5.5.7-1
+- update to 5.5.7
+
 * Tue Jan 28 2020 Fedora Release Engineering <releng@fedoraproject.org> - 5.5.4-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
 
