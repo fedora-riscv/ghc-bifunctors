@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        5.5.7
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Bifunctors
 
 License:        BSD
@@ -119,6 +119,9 @@ chmod a-x CHANGELOG.markdown README.markdown
 
 
 %changelog
+* Fri Jul 17 2020 Jens Petersen <petersen@redhat.com> - 5.5.7-2
+- refresh to cabal-rpm-2.0.6
+
 * Sun Feb 09 2020 Jens Petersen <petersen@redhat.com> - 5.5.7-1
 - update to 5.5.7
 
