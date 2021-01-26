@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        5.5.7
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Bifunctors
 
 License:        BSD
@@ -119,6 +119,9 @@ chmod a-x CHANGELOG.markdown README.markdown
 
 
 %changelog
+* Tue Jan 26 2021 Fedora Release Engineering <releng@fedoraproject.org> - 5.5.7-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild
+
 * Mon Jul 27 2020 Fedora Release Engineering <releng@fedoraproject.org> - 5.5.7-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild
 
