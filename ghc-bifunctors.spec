@@ -7,8 +7,8 @@
 %bcond_without tests
 
 Name:           ghc-%{pkg_name}
-Version:        5.5.7
-Release:        5%{?dist}
+Version:        5.5.10
+Release:        1%{?dist}
 Summary:        Bifunctors
 
 License:        BSD
@@ -119,6 +119,9 @@ chmod a-x CHANGELOG.markdown README.markdown
 
 
 %changelog
+* Thu Aug  5 2021 Jens Petersen <petersen@redhat.com> - 5.5.10-1
+- update to 5.5.10
+
 * Thu Jul 22 2021 Fedora Release Engineering <releng@fedoraproject.org> - 5.5.7-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild
 
