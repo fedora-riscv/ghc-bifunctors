@@ -7,7 +7,7 @@
 %bcond_without tests
 
 Name:           ghc-%{pkg_name}
-Version:        5.5.10
+Version:        5.5.11
 Release:        1%{?dist}
 Summary:        Bifunctors
 
@@ -121,6 +121,9 @@ This package provides the Haskell %{pkg_name} profiling library.
 
 
 %changelog
+* Thu Aug  5 2021 Jens Petersen <petersen@redhat.com> - 5.5.11-1
+- update to 5.5.11
+
 * Thu Aug  5 2021 Jens Petersen <petersen@redhat.com> - 5.5.10-1
 - update to 5.5.10
 
