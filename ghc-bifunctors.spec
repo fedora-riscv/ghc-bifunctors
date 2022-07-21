@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        5.5.11
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Bifunctors
 
 License:        BSD
@@ -124,6 +124,9 @@ dos2unix -k -n %{SOURCE1} %{pkg_name}.cabal
 
 
 %changelog
+* Thu Jul 21 2022 Fedora Release Engineering <releng@fedoraproject.org> - 5.5.11-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_37_Mass_Rebuild
+
 * Fri Jun 17 2022 Jens Petersen <petersen@redhat.com> - 5.5.11-3
 - rebuild
 
