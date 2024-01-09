@@ -4,11 +4,13 @@
 %global pkg_name bifunctors
 %global pkgver %{pkg_name}-%{version}
 
+%ifnarch riscv64
 %bcond_without tests
+%endif
 
 Name:           ghc-%{pkg_name}
 Version:        5.5.15
-Release:        %autorelease
+Release:        %autorelease -e 0.rv64
 Summary:        Bifunctors
 
 License:        BSD-3-Clause
